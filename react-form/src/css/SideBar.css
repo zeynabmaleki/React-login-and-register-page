@@ -1,0 +1,68 @@
+.sidebarStyles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #333;
+    /* Use shorthand for black */
+    color: #fff;
+    /* Use shorthand for white */
+    width: 200px;
+    /* Increased width for better usability */
+    height: 100vh;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    z-index: 1000;
+    /* Ensure it stays on top */
+    padding: 20px;
+    /* Add padding for better spacing */
+}
+
+.sidebarStyles ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Ensure the list takes full width */
+    margin-top: 50px;
+    /* Adjust margin for better spacing */
+}
+
+.sidebarStyles ul li {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.sidebarStyles ul li:hover {
+    background-color: #333;
+    color: #ddd;
+    /* Slightly lighter color on hover */
+}
+
+.closeButtonStyles {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Add rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.closeButtonStyles:hover {
+    background-color: #d32f2f;
+    /* Slightly darker red on hover */
+    transform: scale(1.05);
+    /* Add a subtle zoom effect */
+}

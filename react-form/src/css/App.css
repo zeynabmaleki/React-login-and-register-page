@@ -1,0 +1,123 @@
+/* General Styles */
+#root {
+  max-width: 1280px;
+  margin: auto ;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+/* Card Styles */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+  background-color: #000000;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 15px;
+  width: 300px;
+  max-width: 330px;
+  padding: 0px 30px 20px 30px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.form input,
+.form button {
+  width: 100%;
+  /* Ensure both inputs and buttons take the full width */
+  padding: 10px;
+  /* Apply consistent padding */
+  border-radius: 10px;
+  /* Same border radius for uniformity */
+  font-size: 16px;
+  /* Ensure font size is the same */
+  box-sizing: border-box;
+  /* Include padding and border in the element's width */
+}
+
+.form input {
+  margin: 5px 0;
+  /* Add spacing between inputs */
+  border: 1px solid #ccc;
+  /* Add a border for inputs */
+  outline: none;
+}
+
+.form input:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 5px #21a1f1;
+}
+
+.form button {
+  margin: 10px 0;
+  /* Add spacing between buttons */
+  border: none;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}
+
+.form button:active {
+  transform: scale(0.95);
+}
+
+.form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+
+
+/* Style 1 */
+.style1.card {
+  background: linear-gradient(135deg, #bb67ff, #136fb6);
+
+}
+
+.style1.form {
+  backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+
+
+
+/* Style 2 */
+.style2 {
+  background-color: #61dafb;
+  color: #fff;
+  border: 1px solid #21a1f1;
+}
+
+/* Style 3 */
+.style3 {
+  background-color: #ffcccb;
+  color: #000;
+  border: 1px solid #ff0000;
+}
